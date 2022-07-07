@@ -14,8 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 #Deploy
-from django.conf import settings
-from django.conf.urls.static import static
+#from django.conf import settings
+#from django.conf.urls.static import static
 #Deploy
 
 from django.contrib import admin
@@ -32,5 +32,6 @@ urlpatterns = [
     path('formacionI/', FormacionInicial.as_view(),name = 'formacion_i'),
     path('formacionA/', FormacionAvanzada.as_view(),name = 'formacion_a'),
     path('formacionE/', FormacionEspecializada.as_view(),name = 'formacion_e'),  
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] 
+#+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
