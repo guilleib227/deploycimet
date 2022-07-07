@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login Cimet</title>
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap2.css' %}" />
+    <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/style2.css' %}" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="{% static 'css/responsive2.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div class="login-box">
+      <img src="{% static 'img/logo.png' %}" class="avatar" alt="Avatar Image">
+      <h1>Acceso CIMET</h1>
+      <form>
+        <!-- USERNAME INPUT -->
+        <label for="username">Usuario</label>
+        <input type="text" placeholder="Ingresar Usuario">
+        <!-- PASSWORD INPUT -->
+        <label for="password">Contraseña</label>
+        <input type="password" placeholder="Ingresar Contrseña">
+        <a class="btn btn-primary btn-lg" href="{% url 'Home' %}" role="button">Entrar</a>
+        <!--a href="#">Lost your Password?</!--a><br-->
+        <br>
+        <a href="http://127.0.0.1:8000">Regresar a Inicio</a>
+      </form>
+    </div>
+  </body>
+</html>
